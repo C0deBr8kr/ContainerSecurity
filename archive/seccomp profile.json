@@ -1,0 +1,153 @@
+{
+	"defaultAction": "SCMP_ACT_ERRNO",
+	"archMap": [
+		{
+			"architecture": "SCMP_ARCH_X86_64",
+			"subArchitectures": [
+				"SCMP_ARCH_X86",
+				"SCMP_ARCH_X32"
+			]
+		},
+		{
+			"architecture": "SCMP_ARCH_AARCH64",
+			"subArchitectures": [
+				"SCMP_ARCH_ARM"
+			]
+		},
+		{
+			"architecture": "SCMP_ARCH_MIPS64",
+			"subArchitectures": [
+				"SCMP_ARCH_MIPS",
+				"SCMP_ARCH_MIPS64N32"
+			]
+		},
+		{
+			"architecture": "SCMP_ARCH_MIPS64N32",
+			"subArchitectures": [
+				"SCMP_ARCH_MIPS",
+				"SCMP_ARCH_MIPS64"
+			]
+		},
+		{
+			"architecture": "SCMP_ARCH_MIPSEL64",
+			"subArchitectures": [
+				"SCMP_ARCH_MIPSEL",
+				"SCMP_ARCH_MIPSEL64N32"
+			]
+		},
+		{
+			"architecture": "SCMP_ARCH_MIPSEL64N32",
+			"subArchitectures": [
+				"SCMP_ARCH_MIPSEL",
+				"SCMP_ARCH_MIPSEL64"
+			]
+		},
+		{
+			"architecture": "SCMP_ARCH_S390X",
+			"subArchitectures": [
+				"SCMP_ARCH_S390"
+			]
+		}
+	],
+	"syscalls": [
+		{
+			"names": [
+				"capget",
+				"capset",
+				"chdir",
+				"fchown",
+				"futex",
+				"getdents64",
+				"getpid",
+				"getppid",
+				"lstat",
+				"openat",
+				"prctl",
+				"setgid",
+				"setgroups",
+				"setuid",
+				"stat",
+				"rt_sigaction",
+				"mprotect",
+				"brk",
+				"close",
+				"open",
+				"write",
+				"mmap",
+				"rt_sigprocmask",
+				"sched_getaffinity",
+				"arch_prctl",
+				"access",
+				"getrandom",
+				"sigaltstack",
+				"getrlimit",
+				"set_tid_address",
+				"fstat",
+				"stat",
+				"setsockopt",
+				"read",
+				"openat",
+				"clone",
+				"set_robust_list",
+				"ioctl",
+				"execve",
+				"gettid",
+				"socket",
+				"munmap",
+				"futex",
+				"bind"
+			],
+			"action": "SCMP_ACT_ALLOW",
+			"args": [],
+			"comment": "Necessary syscalls for working of container",
+			"includes": {},
+			"excludes": {}
+		},
+		{
+			"names": [
+
+				"time",
+				"timer_create",
+				"timer_delete",
+				"timerfd_create",
+				"timerfd_gettime",
+				"timerfd_settime",
+				"timer_getoverrun",
+				"timer_gettime",
+				"timer_settime",
+				"times",
+				"fork",
+				"fstat",
+				"write",
+				"dup",
+				"dup2",
+				"dup3",
+				"socket",
+				"open",
+				"close",
+				"mlock",
+				"mlock2",
+				"mlockall"
+			],
+			"action": "SCMP_ACT_ALLOW",
+			"args": [],
+			"comment": "Analysed sys calls: Allowed",
+			"includes": {},
+			"excludes": {}
+		},
+		{
+			"names": [
+				"socketpair",
+				"waitpid",
+				"chmod",
+				"kill",
+				"pipe"
+			],
+			"action": "SCMP_ACT_ERRNO",
+			"args": [],
+			"comment": "Analysed sys calls: Blocked",
+			"includes": {},
+			"excludes": {}
+		}
+	]
+}

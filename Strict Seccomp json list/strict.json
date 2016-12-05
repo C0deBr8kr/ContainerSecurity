@@ -1,0 +1,210 @@
+{
+    "defaultAction": "SCMP_ACT_ERRNO",
+    "syscalls": [
+        {
+            "action": "SCMP_ACT_ALLOW",
+            "args": null,
+            "name": "access"
+        },
+        {
+            "action": "SCMP_ACT_ALLOW",
+            "args": null,
+            "name": "arch_prctl"
+        },
+        {
+            "action": "SCMP_ACT_ALLOW",
+            "args": null,
+            "name": "bind"
+        },
+        {
+            "action": "SCMP_ACT_ALLOW",
+            "args": null,
+            "name": "brk"
+        },
+        {
+            "action": "SCMP_ACT_ALLOW",
+            "args": null,
+            "name": "capget"
+        },
+        {
+            "action": "SCMP_ACT_ALLOW",
+            "args": null,
+            "name": "capset"
+        },
+        {
+            "action": "SCMP_ACT_ALLOW",
+            "args": null,
+            "name": "chdir"
+        },
+        {
+            "action": "SCMP_ACT_ALLOW",
+            "args": null,
+            "name": "clone"
+        },
+        {
+            "action": "SCMP_ACT_ALLOW",
+            "args": null,
+            "name": "close"
+        },
+        {
+            "action": "SCMP_ACT_ALLOW",
+            "args": null,
+            "name": "execve"
+        },
+        {
+            "action": "SCMP_ACT_ALLOW",
+            "args": null,
+            "name": "fchown"
+        },
+        {
+            "action": "SCMP_ACT_ALLOW",
+            "args": null,
+            "name": "fstat"
+        },
+        {
+            "action": "SCMP_ACT_ALLOW",
+            "args": null,
+            "name": "futex"
+        },
+        {
+            "action": "SCMP_ACT_ALLOW",
+            "args": null,
+            "name": "getdents64"
+        },
+        {
+            "action": "SCMP_ACT_ALLOW",
+            "args": null,
+            "name": "getpid"
+        },
+        {
+            "action": "SCMP_ACT_ALLOW",
+            "args": null,
+            "name": "getppid"
+        },
+        {
+            "action": "SCMP_ACT_ALLOW",
+            "args": null,
+            "name": "getrandom"
+        },
+        {
+            "action": "SCMP_ACT_ALLOW",
+            "args": null,
+            "name": "getrlimit"
+        },
+        {
+            "action": "SCMP_ACT_ALLOW",
+            "args": null,
+            "name": "gettid"
+        },
+        {
+            "action": "SCMP_ACT_ALLOW",
+            "args": null,
+            "name": "ioctl"
+        },
+        {
+            "action": "SCMP_ACT_ALLOW",
+            "args": null,
+            "name": "lstat"
+        },
+        {
+            "action": "SCMP_ACT_ALLOW",
+            "args": null,
+            "name": "mmap"
+        },
+        {
+            "action": "SCMP_ACT_ALLOW",
+            "args": null,
+            "name": "mprotect"
+        },
+        {
+            "action": "SCMP_ACT_ALLOW",
+            "args": null,
+            "name": "munmap"
+        },
+        {
+            "action": "SCMP_ACT_ALLOW",
+            "args": null,
+            "name": "open"
+        },
+        {
+            "action": "SCMP_ACT_ALLOW",
+            "args": null,
+            "name": "openat"
+        },
+        {
+            "action": "SCMP_ACT_ALLOW",
+            "args": null,
+            "name": "prctl"
+        },
+        {
+            "action": "SCMP_ACT_ALLOW",
+            "args": null,
+            "name": "read"
+        },
+        {
+            "action": "SCMP_ACT_ALLOW",
+            "args": null,
+            "name": "rt_sigaction"
+        },
+        {
+            "action": "SCMP_ACT_ALLOW",
+            "args": null,
+            "name": "rt_sigprocmask"
+        },
+        {
+            "action": "SCMP_ACT_ALLOW",
+            "args": null,
+            "name": "sched_getaffinity"
+        },
+        {
+            "action": "SCMP_ACT_ALLOW",
+            "args": null,
+            "name": "setgid"
+        },
+        {
+            "action": "SCMP_ACT_ALLOW",
+            "args": null,
+            "name": "setgroups"
+        },
+        {
+            "action": "SCMP_ACT_ALLOW",
+            "args": null,
+            "name": "set_robust_list"
+        },
+        {
+            "action": "SCMP_ACT_ALLOW",
+            "args": null,
+            "name": "setsockopt"
+        },
+        {
+            "action": "SCMP_ACT_ALLOW",
+            "args": null,
+            "name": "set_tid_address"
+        },
+        {
+            "action": "SCMP_ACT_ALLOW",
+            "args": null,
+            "name": "setuid"
+        },
+        {
+            "action": "SCMP_ACT_ALLOW",
+            "args": null,
+            "name": "sigaltstack"
+        },
+        {
+            "action": "SCMP_ACT_ALLOW",
+            "args": null,
+            "name": "socket"
+        },
+        {
+            "action": "SCMP_ACT_ALLOW",
+            "args": null,
+            "name": "stat"
+        },
+        {
+            "action": "SCMP_ACT_ALLOW",
+            "args": null,
+            "name": "write"
+        }
+    ]
+}
